@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.appcompat.widget.Toolbar
+    app:title="Thông tin"
+    android:background="@color/colorPrimary"
+    app:titleTextColor="#fff"
+    android:id="@+id/tb_thongtin"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+
+  <LinearLayout
+      android:background="@drawable/bgroud"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TextView
+          android:gravity="center"
+          android:textStyle="bold"
+          android:layout_margin="10dp"
+          android:textColor="#FF0000"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="Thông tin liên hệ "/>
+      <LinearLayout
+          android:background="@drawable/boder"
+          android:layout_margin="20dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:drawableLeft="@drawable/icon_map"
+              android:gravity="center"
+              android:textStyle="bold"
+              android:layout_margin="10dp"
+              android:textColor="#FF0000"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="20sp"
+              android:text="Địa chỉ : Nam từ liêm Hà nội"/>
+      </LinearLayout>
+      <LinearLayout
+          android:background="@drawable/boder"
+          android:layout_margin="20dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+      <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:map="http://schemas.android.com/apk/res-auto"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/map"
+          android:name="com.google.android.gms.maps.SupportMapFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context=".Thongtin" />
+      </LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>

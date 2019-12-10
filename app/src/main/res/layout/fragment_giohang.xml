@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    tools:context=".GiohangFragment">
+<LinearLayout
+    android:layout_weight="7"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:id="@+id/txtNosp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa có hàng "
+            android:layout_gravity="center"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_Giohang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </FrameLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="right|center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="Tổng tiền : "
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtTongGiatien"
+            android:layout_gravity="right|center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="Giá tiền"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:id="@+id/btnThanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Thanh Toán"/>
+</LinearLayout>
